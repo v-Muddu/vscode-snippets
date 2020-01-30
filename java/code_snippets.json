@@ -1,0 +1,41 @@
+{
+    "Node Class": {
+        "scope": "java",
+        "prefix": "nd",
+        "body": [
+            "public class Node {",
+            "\tint key, value;",
+            "\tNode next;",
+            "\t$0",
+            "\tNode(int key, int value) {",
+            "\t\tthis.key = key;",
+            "\t\tthis.value = value;",
+            "\t}",
+            "}"
+        ],
+        "description": "Node class with key, value and next attributes"
+    },
+    "Point Class": {
+        "scope": "java",
+        "prefix": "pc",
+        "body": [
+            "public class Point {",
+            "\tint r, c;",
+            "\t$0",
+            "\tPoint(int r, int c) {",
+            "\t\tthis.r = r;",
+            "\t\tthis.c = c;",
+            "\t}",
+            "}"
+        ],
+        "description": "Point class with a row and column as attributes"
+    },
+    "Constant": {
+        "scope": "java",
+        "prefix": "const",
+        "body": [
+            "private static final ${type} ${variable} = ${value};"
+        ],
+        "description": "Initialize a constant"
+    }
+}
