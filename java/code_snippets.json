@@ -1,9 +1,9 @@
 {
     "Node Class": {
         "scope": "java",
-        "prefix": "nd",
+        "prefix": "node",
         "body": [
-            "public class Node {",
+            "public static class Node {",
             "\tint key, value;",
             "\tNode next;",
             "\t$0",
@@ -17,9 +17,9 @@
     },
     "Point Class": {
         "scope": "java",
-        "prefix": "pc",
+        "prefix": "point",
         "body": [
-            "public class Point {",
+            "public static class Point {",
             "\tint r, c;",
             "\t$0",
             "\tPoint(int r, int c) {",
@@ -37,5 +37,15 @@
             "private static final ${type} ${variable} = ${value};"
         ],
         "description": "Initialize a constant"
+    },
+    "Null Or Zero": {
+        "scope": "java",
+        "prefix": "nz",
+        "body": [
+            "if (${variable} == null || ${variable}.length == 0) {",
+            "\treturn 0;",
+            "}"
+        ],
+        "description": "Null and Length check"
     }
 }
