@@ -1,5 +1,5 @@
 {
-    "Node Class": {
+    "node class": {
         "scope": "java",
         "prefix": "node",
         "body": [
@@ -15,7 +15,7 @@
         ],
         "description": "Node class with key, value and next attributes"
     },
-    "Point Class": {
+    "point class": {
         "scope": "java",
         "prefix": "point",
         "body": [
@@ -30,7 +30,7 @@
         ],
         "description": "Point class with a row and column as attributes"
     },
-    "Constant": {
+    "constant": {
         "scope": "java",
         "prefix": "const",
         "body": [
@@ -38,7 +38,7 @@
         ],
         "description": "Initialize a constant"
     },
-    "Null Or Zero": {
+    "null Or zero": {
         "scope": "java",
         "prefix": "nz",
         "body": [
@@ -47,5 +47,48 @@
             "}"
         ],
         "description": "Null and Length check"
+    },
+    "public class": {
+        "scope": "java",
+        "prefix": "pc",
+        "body": [
+            "public class ${variable} {",
+            "}"
+        ],
+        "description": "creates an empty public class"
+    },
+    "public static class": {
+        "scope": "java",
+        "prefix": "psc",
+        "body": [
+            "public static class ${variable} {",
+            "}"
+        ],
+        "description": "creates an empty public static class"
+    },
+    "private static class": {
+        "scope": "java",
+        "prefix": "psc",
+        "body": [
+            "private static class ${variable} {",
+            "}"
+        ],
+        "description": "creates an empty private static class"
+    },
+    "trie node class": {
+        "scope": "java",
+        "prefix": "trie",
+        "body": [
+            "public class TrieNode {",
+            "\tMap<Character, TrieNode> ${variable};",
+            "\tboolean isEndOfWord;",
+            "\t",
+            "\tpublic TrieNode() {",
+            "\t\t${variable} = new HashMap<>();",
+            "\t\tisEndOfWord = false;",
+            "\t}",
+            "}"
+        ],
+        "description": "creates a trie node class"
     }
 }
